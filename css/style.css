@@ -274,9 +274,7 @@ body:after {
   width: 100%;
   border-bottom: rgba(255, 255, 255, 0.7); }
   .site-navbar:hover {
-    /*background: #fff;*/
-    /*color: rgba(0, 0, 0, 0.7) !important;*/
-     }
+    background: #fff; }
   .site-navbar .site-logo {
     font-size: 1.5rem; }
     .site-navbar .site-logo a {
@@ -538,7 +536,7 @@ body:after {
   .sticky-wrapper .site-navbar .site-logo a {
     color: #000; }
   .sticky-wrapper .site-navbar .site-menu > li > a {
-    color: rgba(255, 255, 255, 1) !important; }
+    color: rgba(0, 0, 0, 0.7) !important; }
     .sticky-wrapper .site-navbar .site-menu > li > a:hover, .sticky-wrapper .site-navbar .site-menu > li > a.active {
       color: #207561 !important; }
   .sticky-wrapper.is-sticky .site-navbar {
@@ -580,14 +578,10 @@ body:after {
       right: 0;
       top: 0;
       z-index: 2;
-      background: black; }
+      background: rgba(255, 255, 255, 0); }
       @media (max-width: 991.98px) {
-        .site-navbar:hover {
-            background: #fff;   
-    /*color: rgba(0, 0, 0, 0.7) !important;*/
-     }
         .site-blocks-cover.overlay:before {
-          background: black;} }
+          background: rgba(255, 255, 255, 0.5); } }
   .site-blocks-cover, .site-blocks-cover > .container, .site-blocks-cover > .container > .row {
     min-height: 600px;
     height: 100vh; }
