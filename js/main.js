@@ -8,10 +8,36 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
+	$('.fancybox').fancybox({
+            padding : 0,
+            openEffect  : 'elastic',
+            closeBtn: true,
+            helpers : {
+		        title: {
+		            type: 'over'
+		        },
+		        thumbs	: {
+					width	: 50,
+					height	: 50
+				}
+		        // title: null
+		    },
+
+            nextEffect: 'fade',
+    		prevEffect: 'fade',
+    		afterLoad   : function() {    			
+    			// this.title = this.title + '<a href="#" class="" style="">Portfolio</a>';
+    			if(this.element.find("p").html())
+		        	this.title = '<div style="padding:20px">'+ this.title +'<div style="padding-top:10px"><a target="_blank"	 href="'+this.element.find("p").html() + '" class="btn smoothscroll btn-primary">See on GitHub</a></div></div>' ;
+		        else{
+
+		        	this.title = '<div style="padding:20px">'+ this.title +'</div>' ;
+		        }
+		        // this.outer.append('<div style="padding:20px">'+ this.title + this.title +'<div style="padding-top:10px"><a target="_blank"	 href="'+this.element.find("p").html() + '" class="btn smoothscroll btn-primary">See on GitHub</a></div></div>' );
+		        // this.content = '<h1>2. My custom title</h1>' + this.content.html();
+		    }
+        });
 	
-	// $(".loader").delay(1000).fadeOut("slow");
- //  $("#overlayer").delay(1000).fadeOut("slow");	
-  
 
 	var siteMenuClone = function() {
 
@@ -271,12 +297,30 @@ jQuery(document).ready(function($) {
   siteIstotope();
 
 
-  $('.fancybox').on('click', function() {
-	  var visibleLinks = $('.fancybox');
+  // $('.fancybox').on('click', function() {
+	  // var visibleLinks = $('.fancybox');
+	  // $.fancybox.open('<img src="images/post_2.jpg"></img>');
+	  // $('.fancybox').fancybox();
+	
+	  // $.fancybox.open( visibleLinks, {}, visibleLinks.index( this ) );
+	//   $.fancybox.open([
+	// 	{
+	// 		src  : this.href,
+	// 		opts : {
 
-	  $.fancybox.open( visibleLinks, {}, visibleLinks.index( this ) );
+	// 			caption : this.title,
+	// 			afterShow : function( instance, current ) {
+	// 		       this.outer.append("<div>" + "adsds adsd sds" + "</div>");
+	// 		      }
+	// 			// thumb   : 'images/post_2.jpg'
+	// 		}
+	// 	}
+	// ], {
+	// 	loop : false
+	// });
 
-	  return false;
-	});
+
+	  // return false;
+	// });
 
 });
