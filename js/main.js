@@ -8,6 +8,15 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
+	$(".fbox").fancybox({
+		// padding: 5,
+	    openEffect  : 'none',
+	    closeEffect : 'fade',
+	    iframe : {
+	        preload: false
+	    }
+	});
+
 	$('.fancybox').fancybox({
             padding : 0,
             openEffect  : 'elastic',
