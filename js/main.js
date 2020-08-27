@@ -4,6 +4,14 @@
  	once: false
  });
 
+ // added for contact card
+	function openCard() {
+        document.getElementById("mycard").style.display = "block";
+      }
+      function closeCard() {
+        document.getElementById("mycard").style.display = "none";
+      }
+
 jQuery(document).ready(function($) {
 
 	"use strict";
@@ -16,6 +24,8 @@ jQuery(document).ready(function($) {
 	        preload: false
 	    }
 	});
+
+
 
 	$('.fancybox').fancybox({
             padding : 0,
