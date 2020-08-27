@@ -12,6 +12,18 @@
         document.getElementById("mycard").style.display = "none";
       }
 
+      function sendMsg(){
+      	subject=$("#sub").val();
+      	body=$("#msg").val().replace("\n","%0A");
+      	fname=$("#fname").val();
+      	lname=$("#lname").val();
+      	body=body+'%0A%0AThanks,%0A'+fname+' '+lname
+      	window.open(
+		  'mailto:anuj.bansal16@gmail.com?subject='+subject+'&body='+body,
+		  '_blank'
+		);
+      }
+
 jQuery(document).ready(function($) {
 
 	"use strict";
@@ -50,7 +62,7 @@ jQuery(document).ready(function($) {
 		        	this.title = '<div style="padding:20px">'+ this.title +'<div style="padding-top:10px"><a target="_blank"	 href="'+this.element.find("p").html() + '" class="btn smoothscroll btn-primary">See on GitHub</a></div></div>' ;
 		        else{
 
-		        	this.title = '<div style="padding:20px">'+ this.title +'</div>' ;
+		        	this.title = '<div style="padding:20px">'+this.title +'<div style="padding-top:10px"><a target="_blank"	 href="'+this.element.find("img").attr("alt") + '" class="btn smoothscroll btn-primary">Link</a></div></div>' ;
 		        }
 		        // this.outer.append('<div style="padding:20px">'+ this.title + this.title +'<div style="padding-top:10px"><a target="_blank"	 href="'+this.element.find("p").html() + '" class="btn smoothscroll btn-primary">See on GitHub</a></div></div>' );
 		        // this.content = '<h1>2. My custom title</h1>' + this.content.html();
