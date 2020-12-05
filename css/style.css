@@ -403,6 +403,12 @@ body:after {
     .mycard{
       width: 50%;
     }
+    .auto-margin{
+      margin:auto;
+    }
+    .tx-center{
+      text-align: center;
+    }
     
   }
   @media (max-width: 500px) { 
