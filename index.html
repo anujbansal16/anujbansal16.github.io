@@ -50,58 +50,6 @@
   <link rel="stylesheet" href="css/aos.css">
 
   <link rel="stylesheet" href="css/style.css">
-
-  <style>
-    .work-exp-carousel .owl-dots {
-      text-align: center;
-      margin-top: 12px;
-    }
-    .work-exp-carousel .owl-dot span {
-      width: 10px;
-      height: 10px;
-      margin: 0 4px;
-      background: #ccc;
-      display: inline-block;
-      border-radius: 50%;
-      transition: background 0.3s;
-    }
-    .work-exp-carousel .owl-dot.active span {
-      background: #207561;
-    }
-    .work-exp-carousel .owl-nav {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      transform: translateY(-50%);
-      pointer-events: none;
-    }
-    .work-exp-carousel .owl-nav button {
-      pointer-events: all;
-      background: rgba(32,117,97,0.15) !important;
-      border-radius: 50% !important;
-      width: 28px;
-      height: 28px;
-      font-size: 16px !important;
-      line-height: 1 !important;
-      color: #207561 !important;
-    }
-    .work-exp-carousel .owl-nav button:hover {
-      background: rgba(32,117,97,0.35) !important;
-    }
-    .work-exp-carousel-wrap {
-      position: relative;
-    }
-    .work-slide-label {
-      font-size: 0.75rem;
-      color: #207561;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-  </style>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -178,7 +126,7 @@
                         src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
                     </a>
                   </div>
-
+                  
                   <div class="col-2 col-md-1" style="padding:10px">
                     <a target="_blank" href="https://angel.co/u/anujbansal">
                       <img width="32px" align="left" title="Angellist" alt="Angellist"
@@ -293,109 +241,103 @@
             </div>
           </div>
 
-          <!-- Work Experience: 2-slide scrollable carousel -->
           <div class="col-md-6 my mb-4">
             <div class="service d-flex h-100">
               <div class="service-number mr-4 d-none d-sm-block"><span class="icon-briefcase"></span></div>
-              <div class="service-about" style="width: 100%; min-width: 0;">
+              <div class="service-about">
                 <h3>Work Experience</h3>
-                <div class="work-exp-carousel-wrap" style="margin-top: 20px;">
-                  <div class="owl-carousel work-exp-carousel">
-
-                    <!-- Slide 1: Swiggy -->
-                    <div class="work-slide">
-                      <div class="work-slide-label">1 / 2 &nbsp;·&nbsp; Current</div>
-                      <div style="text-align: right;">
-                        <div>
-                          <img width="32px" align="left" title="Swiggy" alt="Swiggy" src="images/logos/swiggy.svg" />
-                        </div>
-                        Software Development Engineer - 3
-                        <div><a target="_blank" href="https://www.swiggy.com/">Swiggy, Bengaluru</a></div>
-                      </div>
-                      <div style="font-size: 0.9rem;margin-left: 10px">
-                        • <b>Order Recovery:</b> Built a core <b>order monitoring service</b> that detects order delays, triggers corrective actions, and
-                        ensures proactive customer communication—impacting <b>5% of overall orders</b>. </br>
-                        • <b>Tech Simplification:</b> Leading tech simplification for my team. Optimized 5+ services, reduced Deployment Units
-                        and associated infrastructure from 15 to 10, and achieved <b>$2K+/month in cost savings</b>. </br>
-                        • <b>Track Page Widgetization:</b> Led the end-to-end architecture for a widgetized track screen, decoupling the UI from
-                        app releases to accelerate experimentation and unlock monetization. Streamlined the backend by <b>refactoring
-                        200K+ lines of code to just 30K, boosting execution speed by 35%</b>. </br>
-                        • <b>Move to India (MTI) Migration:</b> Orchestrated a zero-downtime multi-region migration (Singapore to Mumbai) for
-                        owned services. Coordinated across 10+ teams to manage the Kafka topology migration for <b>16 kafka producer</b>
-                        services, along with MySQL, Redis, and DynamoDB components encompassing <b>115 APIs</b>.</br>
-                      </div>
-                      <div style="text-align: right;"><span style="color: #207561;" class="icon-calendar"></span>
-                        March, 2021 - Present</div>
+                <div style="margin-top: 20px;">
+                  <div style="text-align: right;">
+                    <div>
+                      <img width="32px" align="left" title="Swiggy" alt="Swiggy" src="images/logos/swiggy.svg" />
                     </div>
-
-                    <!-- Slide 2: SAP Labs + Mentor Graphics + Accenture -->
-                    <div class="work-slide">
-                      <div class="work-slide-label">2 / 2 &nbsp;·&nbsp; Previous</div>
-
-                      <div class="mb-4">
-                        <div style="text-align: right;">
-                          <div>
-                            <img width="82px" align="left" title="SAP" alt="SAP" src="images/logos/sap.svg" />
-                          </div>
-                          Associate Developer
-                          <div>
-                            <a target="_blank" href="https://www.sap.com/india/about/labs-india.html">SAP Labs, Bengaluru</a>
-                          </div>
-                        </div>
-                        <div style="font-size: 0.9rem;margin-left: 10px">Working with the cloud platform team on the open
-                          source-project - Service Fabrik which is SAP's multi-cloud, enterprise service provisioning,
-                          management and operating solution. <a target="_blank"
-                            href="https://blogs.sap.com/2017/08/21/service-fabrik-from-sap-goes-open-source/">Read
-                            More..</a></div>
-                        <div style="text-align: right;"><span style="color: #207561;" class="icon-calendar"></span>
-                          September, 2020 - March, 2021</div>
-                      </div>
-
-                      <div class="mb-4">
-                        <div style="text-align: right;">
-                          <div>
-                            <img width="102px" align="left" title="Mentor" alt="Mentor" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Mentor_Graphics_Logo.svg" />
-                          </div>
-                          SDE Intern at
-                          <div>
-                            <a target="_blank"
-                              href="https://www.mentor.com/india/">Mentor Graphics, Hyderabad</a>
-                          </div>
-                        </div>
-                        <div style="font-size: 0.9rem;margin-left: 10px"> Worked on web service to generate the diagnostic
-                          report of the mentor's integration server. This report will help the users to trace out any kind
-                          of discrepancies or inconsistencies related to their tasks.</div>
-                        <div style="text-align: right;"><span style="color: #207561;" class="icon-calendar"></span> May,
-                          2019 - July, 2019</div>
-                      </div>
-
-                      <div>
-                        <div style="text-align: right;">
-                          <div>
-                            <img width="102px" align="left" title="Accenture" alt="Accenture" src="images/logos/accenture.svg" />
-                          </div>
-                          Associate Software Engineer at
-                          <div>
-                            <a target="_blank" href="https://www.accenture.com/in-en">Accenture Solutions Pvt. Ltd, Pune</a>
-                          </div>
-                        </div>
-                        <div style="font-size: 0.9rem;margin-left: 10px;"> Designed and Developed CRM applications as a
-                          part of salesforce development team. Work with the team to develop a customized social network
-                          for the end users of the client's application.</div>
-                        <div style="text-align: right;"><span style="color: #207561;" class="icon-calendar"></span> July,
-                          2017 - June, 2018</div>
-                      </div>
-
-                    </div>
-                    <!-- end slide 2 -->
-
+                    Software Development Engineer - 3
+                    <div><a target="_blank" href="https://www.swiggy.com/">Swiggy, Bengaluru</a></div>
                   </div>
-                  <!-- end .work-exp-carousel -->
+                  <div style="font-size: 0.9rem;margin-left: 10px">
+                    • <b>Order Recovery:</b> Built a core <b>order monitoring service</b> that detects order delays, triggers corrective actions, and
+                    ensures proactive customer communication—impacting <b>5% of overall orders</b>. </br>
+                    • <b>Tech Simplification:</b> Leading tech simplification for my team. Optimized 5+ services, reduced Deployment Units
+                    and associated infrastructure from 15 to 10, and achieved <b>$2K+/month in cost savings</b>. </br>
+                    • <b>Track Page Widgetization:</b> Led the end-to-end architecture for a widgetized track screen, decoupling the UI from
+                    app releases to accelerate experimentation and unlock monetization. Streamlined the backend by <b>refactoring
+                    200K+ lines of code to just 30K, boosting execution speed by 35%</b>. </br>
+                    • <b>Move to India (MTI) Migration:</b> Orchestrated a zero-downtime multi-region migration (Singapore to Mumbai) for
+                    owned services. Coordinated across 10+ teams to manage the Kafka topology migration for <b>16 kafka producer</b>
+                    services, along with MySQL, Redis, and DynamoDB components encompassing <b>115 APIs</b>.</br>
+                  </div>
+                  <div style="text-align: right;"><span style="color: #207561;" class="icon-calendar"></span>
+                    March, 2021 - Present</div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- end Work Experience carousel -->
+
+          <div class="col-md-6 my mb-4">
+            <div class="service d-flex h-100">
+              <div class="service-number mr-4 d-none d-sm-block"><span class="icon-briefcase"></span></div>
+              <div class="service-about">
+                <h3>Previous Experience</h3>
+                <div style="margin-top: 20px;">
+
+                  <div class="mb-4">
+                    <div style="text-align: right;">
+                      <div>
+                        <img width="82px" align="left" title="SAP" alt="SAP" src="images/logos/sap.svg" />
+                      </div>
+                      Associate Developer
+                      <div>
+                        <a target="_blank" href="https://www.sap.com/india/about/labs-india.html">SAP Labs, Bengaluru</a>
+                      </div>
+                    </div>
+                    <div style="font-size: 0.9rem;margin-left: 10px">Working with the cloud platform team on the open
+                      source-project - Service Fabrik which is SAP's multi-cloud, enterprise service provisioning,
+                      management and operating solution. <a target="_blank"
+                        href="https://blogs.sap.com/2017/08/21/service-fabrik-from-sap-goes-open-source/">Read
+                        More..</a></div>
+                    <div style="text-align: right;"><span style="color: #207561;" class="icon-calendar"></span>
+                      September, 2020 - March, 2021</div>
+                  </div>
+
+                  <div class="mb-4">
+                    <div style="text-align: right;">
+                      <div>
+                        <img width="102px" align="left" title="Mentor" alt="Mentor" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Mentor_Graphics_Logo.svg" />
+                      </div>
+                      SDE Intern at
+                      <div>
+                        <a target="_blank"
+                          href="https://www.mentor.com/india/">Mentor Graphics, Hyderabad</a>
+                      </div>
+                    </div>
+                    <div style="font-size: 0.9rem;margin-left: 10px"> Worked on web service to generate the diagnostic
+                      report of the mentor's integration server. This report will help the users to trace out any kind
+                      of discrepancies or inconsistencies related to their tasks.</div>
+                    <div style="text-align: right;"><span style="color: #207561;" class="icon-calendar"></span> May,
+                      2019 - July, 2019</div>
+                  </div>
+
+                  <div>
+                    <div style="text-align: right;">
+                      <div>
+                        <img width="102px" align="left" title="Accenture" alt="Accenture" src="images/logos/accenture.svg" />
+                      </div>
+                      Associate Software Engineer at
+                      <div>
+                        <a target="_blank" href="https://www.accenture.com/in-en">Accenture Solutions Pvt. Ltd, Pune</a>
+                      </div>
+                    </div>
+                    <div style="font-size: 0.9rem;margin-left: 10px;"> Designed and Developed CRM applications as a
+                      part of salesforce development team. Work with the team to develop a customized social network
+                      for the end users of the client's application.</div>
+                    <div style="text-align: right;"><span style="color: #207561;" class="icon-calendar"></span> July,
+                      2017 - June, 2018</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="col-md-12 mb-4">
             <div class="service d-flex h-100">
@@ -882,20 +824,6 @@
   <script src="js/jquery.sticky.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/main.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      $('.work-exp-carousel').owlCarousel({
-        items: 1,
-        loop: false,
-        margin: 0,
-        nav: true,
-        dots: true,
-        autoplay: false,
-        navText: ['&#8249;', '&#8250;']
-      });
-    });
-  </script>
 
 </body>
 
